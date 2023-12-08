@@ -1,0 +1,74 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #abedf7; /* Темный фон */
+    color: #1c1b1b; /* Белый текст */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    text-align: center;
+}
+
+.calc-container {
+    background-color: #d0efb1; /* Белый фон контейнера калькулятора */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+}
+
+.screen {
+    background-color: #fff; /* Белый фон экрана */
+    padding: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Цвет текста на экране */
+}
+
+.screen span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; /* Увеличил промежуток между кнопками */
+}
+
+
+
+.digits {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.key {
+    background-color: #fff; /* Белый фон цифровых кнопок */
+    color: #333; /* Цвет текста на цифровых кнопках */
+}
+
+.operation {
+    background-color: #ff9500; /* Цвет кнопок операций */
+}
+
+.bracket {
+    background-color: #4caf50; /* Цвет кнопок скобок */
+}
+
+.result {
+    background-color: #007aff; /* Цвет кнопки равно */
+}
+
+.clear {
+    background-color: #ff3b30; /* Цвет кнопки очистки */
+}
